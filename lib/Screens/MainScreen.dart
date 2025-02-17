@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 
-class Mainscreen extends StatelessWidget {
-  const Mainscreen({super.key});
+class MainScreen extends StatelessWidget {
+  const MainScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      color: Color(0xFFFAF9F7),
+    );
   }
 }
