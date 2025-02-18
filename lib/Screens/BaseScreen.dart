@@ -4,6 +4,7 @@ import 'package:traffic_law_app/Screens/DrivingRulesArticleScreen.dart';
 import 'package:traffic_law_app/Screens/FavoriteScreen.dart';
 import 'package:traffic_law_app/Screens/RoadSignDetailScreen.dart';
 import 'package:traffic_law_app/Screens/RoadSignsScreen.dart';
+import 'package:traffic_law_app/Screens/SearchScreen.dart';
 
 import '../Components/BottomNavBar.dart';
 import 'MainScreen.dart';
@@ -41,8 +42,8 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
 
     // Add the MainScreen with the deviceName passed correctly
-    _screens.add(MainScreen()); // Use widget.deviceName
     _screens.add(DrivingRuleScreen());
+    _screens.add(SearchScreen()); // Use widget.deviceName
     _screens.add(RoadSignsScreen());
     _screens.add(FavoriteScreen());
   }

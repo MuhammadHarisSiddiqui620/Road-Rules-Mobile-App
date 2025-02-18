@@ -25,14 +25,14 @@ class _SplashScreenState extends State<SplashScreen> {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-        builder: (context) => const BaseScreen(),
+        builder: (context) => const MainScreen(),
       ),
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    const String backgroundAsset = 'assets/reminder1.png';
+    const String backgroundAsset = 'assets/splashscreen.png';
 
     return Scaffold(
       body: Center(
