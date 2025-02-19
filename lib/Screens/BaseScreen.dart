@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:traffic_law_app/Screens/DrivingRuleScreen.dart';
 import 'package:traffic_law_app/Screens/DrivingRulesArticleScreen.dart';
-import 'package:traffic_law_app/Screens/FavoriteScreen.dart';
+import 'package:traffic_law_app/Screens/FavouriteScreen.dart';
 import 'package:traffic_law_app/Screens/RoadSignDetailScreen.dart';
 import 'package:traffic_law_app/Screens/RoadSignsScreen.dart';
 import 'package:traffic_law_app/Screens/SearchScreen.dart';
@@ -44,8 +44,8 @@ class _HomeScreenState extends State<HomeScreen> {
     // Add the MainScreen with the deviceName passed correctly
     _screens.add(DrivingRuleScreen());
     _screens.add(SearchScreen()); // Use widget.deviceName
+    _screens.add(FavouriteScreen());
     _screens.add(RoadSignsScreen());
-    _screens.add(FavoriteScreen());
   }
 
   void _onItemTapped(int index) {

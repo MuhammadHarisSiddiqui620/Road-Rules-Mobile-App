@@ -1,33 +1,38 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:traffic_law_app/Screens/QuestionHeader.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../constants.dart';
+import 'QuestionHeader.dart';
 
-class DrivingRuleScreen extends StatefulWidget {
-  const DrivingRuleScreen({super.key});
+class FavouriteScreen extends StatefulWidget {
+  const FavouriteScreen({super.key});
 
   @override
-  _DrivingRuleScreenState createState() => _DrivingRuleScreenState();
+  _FavouriteScreenState createState() => _FavouriteScreenState();
 }
 
-class _DrivingRuleScreenState extends State<DrivingRuleScreen> {
+class _FavouriteScreenState extends State<FavouriteScreen> {
   late Future<List<Map<String, dynamic>>> futureHeaders;
 
   @override
   void initState() {
     super.initState();
-    futureHeaders = loadRoadRules();
+    futureHeaders = loadHeadersFromSharedPreferences();
   }
 
-  Future<List<Map<String, dynamic>>> loadRoadRules() async {
-    String jsonString = await rootBundle.loadString('assets/road_rules.json');
-    List<dynamic> jsonList = json.decode(jsonString);
+  Future<List<Map<String, dynamic>>> loadHeadersFromSharedPreferences() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? favData = prefs.getString("favourites");
 
-    return jsonList.take(4).map((item) {
+    if (favData == null || favData.isEmpty) {
+      return []; // Return an empty list if no data is found
+    }
+
+    List<dynamic> jsonList = jsonDecode(favData);
+    return jsonList.map((item) {
       return {
         'header': item['header'],
-        'subheaders': List<Map<String, dynamic>>.from(item['sub_headers']),
+        'subheaders': List<Map<String, dynamic>>.from(item['subheaders'] ?? []),
       };
     }).toList();
   }
@@ -42,27 +47,27 @@ class _DrivingRuleScreenState extends State<DrivingRuleScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Content", style: primaryTextStyle),
-                SizedBox(height: 21),
+                Text("Saved Content", style: primaryTextStyle),
+                const SizedBox(height: 21),
                 FutureBuilder<List<Map<String, dynamic>>>(
                   future: futureHeaders,
                   builder: (context, snapshot) {
                     if (!snapshot.hasData) {
-                      return Center(child: CircularProgressIndicator());
+                      return const Center(child: CircularProgressIndicator());
+                    }
+                    if (snapshot.data!.isEmpty) {
+                      return const Center(child: Text("No favourites saved."));
                     }
 
-                    List<Map<String, dynamic>> headersData = snapshot.data!;
-
                     return Column(
-                      children: headersData
+                      children: snapshot.data!
                           .map((data) => Column(
                                 children: [
                                   QuestionHeader(
                                     header: data['header'],
-                                    subHeaders: List<Map<String, dynamic>>.from(
-                                        data['subheaders']),
+                                    subHeaders: data['subheaders'],
                                   ),
-                                  SizedBox(height: 7),
+                                  const SizedBox(height: 7),
                                 ],
                               ))
                           .toList(),
