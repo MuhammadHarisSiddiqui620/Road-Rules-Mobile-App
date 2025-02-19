@@ -1,64 +1,78 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
-
+import 'package:flutter/services.dart';
+import 'package:traffic_law_app/Screens/QuestionHeader.dart';
 import '../constants.dart';
 
-class DrivingRuleScreen extends StatelessWidget {
+class DrivingRuleScreen extends StatefulWidget {
   const DrivingRuleScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Color(0xFFFAF9F7),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 60),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text("Content", style: primaryTextStyle),
-            SizedBox(
-              height: 21,
-            ),
-            QuestionHeader(header: "Introduction to traffic regulations"),
-            SizedBox(
-              height: 7,
-            ),
-            QuestionHeader(header: "Automatic or mechanical"),
-            SizedBox(
-              height: 7,
-            ),
-            QuestionHeader(
-                header:
-                    "Getting behind the wheel, adjusting mirrors, taxiing and shifting gears"),
-            SizedBox(
-              height: 7,
-            ),
-            QuestionHeader(header: "Car start"),
-          ],
-        ),
-      ),
-    );
-  }
+  _DrivingRuleScreenState createState() => _DrivingRuleScreenState();
 }
 
-class QuestionHeader extends StatelessWidget {
-  final String header;
+class _DrivingRuleScreenState extends State<DrivingRuleScreen> {
+  late Future<List<Map<String, dynamic>>> futureHeaders;
 
-  const QuestionHeader({super.key, required this.header});
+  @override
+  void initState() {
+    super.initState();
+    futureHeaders = loadRoadRules();
+  }
+
+  Future<List<Map<String, dynamic>>> loadRoadRules() async {
+    String jsonString = await rootBundle.loadString('assets/road_rules.json');
+    List<dynamic> jsonList = json.decode(jsonString);
+
+    return jsonList.take(4).map((item) {
+      return {
+        'header': item['header'],
+        'subheaders': List<Map<String, dynamic>>.from(item['sub_headers']),
+      };
+    }).toList();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      constraints: BoxConstraints(minHeight: 50, minWidth: double.infinity),
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.white, width: 2),
-        color: Color(0xFF333350),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Text(
-          header,
-          style: questionHeader,
+    return Scrollbar(
+      child: SingleChildScrollView(
+        child: Container(
+          color: Color(0xFFFAF9F7),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 60),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Content", style: primaryTextStyle),
+                SizedBox(height: 21),
+                FutureBuilder<List<Map<String, dynamic>>>(
+                  future: futureHeaders,
+                  builder: (context, snapshot) {
+                    if (!snapshot.hasData) {
+                      return Center(child: CircularProgressIndicator());
+                    }
+
+                    List<Map<String, dynamic>> headersData = snapshot.data!;
+
+                    return Column(
+                      children: headersData
+                          .map((data) => Column(
+                                children: [
+                                  QuestionHeader(
+                                    header: data['header'],
+                                    subHeaders: List<Map<String, dynamic>>.from(
+                                        data['subheaders']),
+                                  ),
+                                  SizedBox(height: 7),
+                                ],
+                              ))
+                          .toList(),
+                    );
+                  },
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );

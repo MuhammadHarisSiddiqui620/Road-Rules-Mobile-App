@@ -38,11 +38,11 @@ const birthdaySecondaryText = TextStyle(
     fontFamily: 'PlusJakartaSans',
     fontWeight: FontWeight.w500);
 
-const birthdayFirstText = TextStyle(
+const descriptionText = TextStyle(
     color: Color(0xFF000000),
     fontSize: 16,
     fontFamily: 'PlusJakartaSans',
-    fontWeight: FontWeight.w600);
+    fontWeight: FontWeight.w500);
 
 const postCardInputText = TextStyle(
     color: Color(0xFF000000),
@@ -65,5 +65,12 @@ const mainScreenText = TextStyle(
 const questionHeader = TextStyle(
     color: Colors.white,
     fontSize: 20,
+    fontFamily: 'PlusJakartaSans',
+    fontWeight: FontWeight.w500);
+
+const questionSubHeader = TextStyle(
+    color: Color(0xFFFE3B01),
+    fontSize: 20,
+    decoration: TextDecoration.underline,
     fontFamily: 'PlusJakartaSans',
     fontWeight: FontWeight.w500);
