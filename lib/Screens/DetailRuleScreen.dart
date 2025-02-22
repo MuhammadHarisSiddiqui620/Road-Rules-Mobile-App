@@ -142,7 +142,7 @@ class _DetailRuleScreenState extends State<DetailRuleScreen> {
                               Text(subHeader['description'],
                                   style: descriptionText),
                             const SizedBox(height: 29),
-                            if (subHeader['picture'] != null)
+                            if (subHeader['picture'] != "")
                               Center(
                                 child: Image.asset(
                                   subHeader[

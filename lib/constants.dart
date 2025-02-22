@@ -50,11 +50,11 @@ const postCardInputText = TextStyle(
     fontFamily: 'PlusJakartaSans',
     fontWeight: FontWeight.w500);
 
-const miniCalendorDate = TextStyle(
-    color: Color(0xFF24252C),
-    fontSize: 14,
+const searchScreen = TextStyle(
+    color: Colors.black,
+    fontSize: 20,
     fontFamily: 'PlusJakartaSans',
-    fontWeight: FontWeight.w800);
+    fontWeight: FontWeight.w500);
 
 const mainScreenText = TextStyle(
     color: Colors.black,
