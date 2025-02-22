@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:traffic_law_app/Screens/DrivingRulesArticleScreen.dart';
+import 'package:traffic_law_app/Screens/DetailRuleScreen.dart';
 import 'package:traffic_law_app/constants.dart';
 
-class QuestionHeader extends StatefulWidget {
+class RulesHeader extends StatefulWidget {
   final String header;
   final List<Map<String, dynamic>> subHeaders;
 
-  const QuestionHeader({
+  const RulesHeader({
     super.key,
     required this.header,
     required this.subHeaders,
   });
 
   @override
-  _QuestionHeaderState createState() => _QuestionHeaderState();
+  _RulesHeaderState createState() => _RulesHeaderState();
 }
 
-class _QuestionHeaderState extends State<QuestionHeader> {
+class _RulesHeaderState extends State<RulesHeader> {
   bool isExpanded = false;
 
   @override
@@ -53,13 +53,14 @@ class _QuestionHeaderState extends State<QuestionHeader> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => DrivingRulesArticleScreen(
+                        builder: (context) => DetailRuleScreen(
                           header: widget.header,
                           subHeaders: [
                             subHeader
                           ], // Pass as a list instead of a string
                           description: subHeader['description'] ??
                               "No description available",
+                          ruleSign: subHeader['picture'] ?? "No Picture",
                         ),
                       ),
                     );

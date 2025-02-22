@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:traffic_law_app/Screens/QuestionHeader.dart';
+import 'package:traffic_law_app/Screens/RulesHeader.dart';
 import '../constants.dart';
 
 class DrivingRuleScreen extends StatefulWidget {
@@ -21,7 +21,8 @@ class _DrivingRuleScreenState extends State<DrivingRuleScreen> {
   }
 
   Future<List<Map<String, dynamic>>> loadRoadRules() async {
-    String jsonString = await rootBundle.loadString('assets/road_rules.json');
+    String jsonString =
+        await rootBundle.loadString('assets/driving_rules.json');
     List<dynamic> jsonList = json.decode(jsonString);
 
     return jsonList.take(4).map((item) {
@@ -57,7 +58,7 @@ class _DrivingRuleScreenState extends State<DrivingRuleScreen> {
                       children: headersData
                           .map((data) => Column(
                                 children: [
-                                  QuestionHeader(
+                                  RulesHeader(
                                     header: data['header'],
                                     subHeaders: List<Map<String, dynamic>>.from(
                                         data['subheaders']),

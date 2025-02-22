@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:hive/hive.dart';
-import 'package:traffic_law_app/Screens/BaseScreen.dart';
 import 'dart:async';
 
 import 'package:traffic_law_app/Screens/MainScreen.dart';

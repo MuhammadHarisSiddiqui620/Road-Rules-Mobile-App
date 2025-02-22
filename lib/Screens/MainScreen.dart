@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:traffic_law_app/Screens/BaseScreen.dart';
-import 'package:traffic_law_app/Screens/DrivingRuleScreen.dart';
 
 import '../constants.dart';
 
@@ -27,7 +26,6 @@ class MainScreen extends StatelessWidget {
                   SvgPicture.asset(
                     'assets/main_screen_logo.svg',
                     fit: BoxFit.cover,
-                    width: 380,
                   ),
                   Positioned(
                     top: 150,

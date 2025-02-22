@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../constants.dart';
-import 'QuestionHeader.dart';
+import 'RulesHeader.dart';
 
 class FavouriteScreen extends StatefulWidget {
   const FavouriteScreen({super.key});
@@ -63,7 +63,7 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
                       children: snapshot.data!
                           .map((data) => Column(
                                 children: [
-                                  QuestionHeader(
+                                  RulesHeader(
                                     header: data['header'],
                                     subHeaders: data['subheaders'],
                                   ),

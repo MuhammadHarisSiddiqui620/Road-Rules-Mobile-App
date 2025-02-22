@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:traffic_law_app/Screens/DrivingRuleScreen.dart';
-import 'package:traffic_law_app/Screens/DrivingRulesArticleScreen.dart';
 import 'package:traffic_law_app/Screens/FavouriteScreen.dart';
-import 'package:traffic_law_app/Screens/RoadSignDetailScreen.dart';
 import 'package:traffic_law_app/Screens/RoadSignsScreen.dart';
 import 'package:traffic_law_app/Screens/SearchScreen.dart';
 
 import '../Components/BottomNavBar.dart';
-import 'MainScreen.dart';
 
 class BaseScreen extends StatelessWidget {
   const BaseScreen({super.key}); // Made deviceName optional

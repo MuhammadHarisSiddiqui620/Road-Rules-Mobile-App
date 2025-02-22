@@ -1,26 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:traffic_law_app/Screens/BaseScreen.dart';
 import 'dart:convert'; // For encoding/decoding JSON
 import '../constants.dart';
 
-class DrivingRulesArticleScreen extends StatefulWidget {
+class DetailRuleScreen extends StatefulWidget {
   final String header;
   final List<Map<String, dynamic>> subHeaders;
-  final String description;
+  final String? description;
+  final String? ruleSign;
 
-  const DrivingRulesArticleScreen({
+  const DetailRuleScreen({
     super.key,
     required this.header,
     required this.subHeaders,
-    required this.description,
+    this.description,
+    this.ruleSign,
   });
 
   @override
-  _DrivingRulesArticleScreenState createState() =>
-      _DrivingRulesArticleScreenState();
+  _DetailRuleScreenState createState() => _DetailRuleScreenState();
 }
 
-class _DrivingRulesArticleScreenState extends State<DrivingRulesArticleScreen> {
+class _DetailRuleScreenState extends State<DetailRuleScreen> {
   bool isFavourite = false;
 
   @override
@@ -97,6 +99,12 @@ class _DrivingRulesArticleScreenState extends State<DrivingRulesArticleScreen> {
                         onTap: () {
                           _toggleFavourite(); // Add parentheses to call the function
                           print("Favourite changed");
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const BaseScreen(),
+                            ),
+                          );
                         },
                         child: Icon(
                           isFavourite ? Icons.favorite : Icons.favorite_outline,
@@ -130,8 +138,17 @@ class _DrivingRulesArticleScreenState extends State<DrivingRulesArticleScreen> {
                           children: [
                             Text(subHeader['title'], style: questionSubHeader),
                             const SizedBox(height: 5),
-                            Text(subHeader['description'],
-                                style: descriptionText),
+                            if (subHeader['description'] != null)
+                              Text(subHeader['description'],
+                                  style: descriptionText),
+                            const SizedBox(height: 29),
+                            if (subHeader['picture'] != null)
+                              Center(
+                                child: Image.asset(
+                                  subHeader[
+                                      'picture'], // Try BoxFit.cover, BoxFit.fill, or BoxFit.fitWidth if needed
+                                ),
+                              ),
                           ],
                         ),
                       );

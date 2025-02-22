@@ -5,6 +5,12 @@ class SearchScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scrollbar(
+      child: SingleChildScrollView(
+        child: Column(
+          children: [],
+        ),
+      ),
+    );
   }
 }
