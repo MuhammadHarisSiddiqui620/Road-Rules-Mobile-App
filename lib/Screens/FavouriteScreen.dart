@@ -56,9 +56,30 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
                       return const Center(child: CircularProgressIndicator());
                     }
                     if (snapshot.data!.isEmpty) {
-                      return const Center(child: Text("No favourites saved."));
+                      return Center(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 200),
+                          child: RichText(
+                            textAlign: TextAlign.center,
+                            text: TextSpan(
+                              style: searchScreen, // Use your text style
+                              children: [
+                                TextSpan(text: "Just click the "),
+                                TextSpan(
+                                  text: "♡", // Heart emoji
+                                  style: TextStyle(
+                                      fontSize: 24), // Make the heart bigger
+                                ),
+                                TextSpan(
+                                    text:
+                                        " button in the section you want to save, and your saved articles or traffic signs will appear here!"),
+                              ],
+                            ),
+                          ),
+                        ),
+                      );
                     }
-
                     return Column(
                       children: snapshot.data!
                           .map((data) => Column(
