@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:traffic_law_app/Screens/DetailRuleScreen.dart';
-import 'package:traffic_law_app/Screens/RulesHeader.dart';
+import 'package:traffic_law_app/constants.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -19,8 +19,13 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   void initState() {
     super.initState();
-    loadJsonData();
-    searchController.addListener(_filterResults);
+    loadJsonData().then((_) {
+      setState(() {}); // Ensure UI updates after data loads
+    });
+    searchController.addListener(() {
+      print("Text changed: ${searchController.text}"); // Debugging
+      _filterResults();
+    });
   }
 
   Future<void> loadJsonData() async {
@@ -34,7 +39,6 @@ class _SearchScreenState extends State<SearchScreen> {
 
     List<Map<String, dynamic>> tempHeaders = [];
 
-    // Extract headers and subheaders from both JSON files
     for (var item in drivingData) {
       tempHeaders.add({
         'header': item['header'],
@@ -51,11 +55,23 @@ class _SearchScreenState extends State<SearchScreen> {
 
     setState(() {
       allHeaders = tempHeaders;
+      filteredResults = List.from(allHeaders);
     });
+
+    print("Loaded headers: ${allHeaders.length}"); // Debugging
   }
 
   void _filterResults() {
     String query = searchController.text.toLowerCase();
+    print("Search query: $query"); // Debugging
+
+    if (query.isEmpty) {
+      setState(() {
+        filteredResults = List.from(allHeaders);
+      });
+      return;
+    }
+
     setState(() {
       filteredResults = allHeaders
           .where((item) =>
@@ -64,6 +80,8 @@ class _SearchScreenState extends State<SearchScreen> {
                   .any((sub) => sub['title'].toLowerCase().contains(query)))
           .toList();
     });
+
+    print("Filtered results: ${filteredResults.length}"); // Debugging
   }
 
   void _navigateToRulesHeader(Map<String, dynamic> selectedItem) {
@@ -88,61 +106,58 @@ class _SearchScreenState extends State<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scrollbar(
-      child: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 60),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text("Content",
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-              SizedBox(height: 15),
-              Text(
-                "Enter a name to search for articles and road signs",
-                style: TextStyle(fontSize: 16, color: Colors.grey),
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 80),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text("Content", style: primaryTextStyle),
+            SizedBox(height: 15),
+            Text(
+              "Enter a name to search for articles and road signs",
+              style: searchScreen,
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(height: 30),
+            TextField(
+              controller: searchController,
+              style: TextStyle(
+                fontSize: 16,
+                height: 1.5,
+                color: Color(0xFFB32D35),
+                fontWeight: FontWeight.w500,
               ),
-              SizedBox(height: 55),
-              TextField(
-                controller: searchController,
-                style: TextStyle(
-                  fontSize: 16,
-                  height: 1.5,
-                  color: Color(0xFFB32D35),
-                  fontWeight: FontWeight.w500,
-                ),
-                decoration: InputDecoration(
-                  fillColor: Color(0XFF333350),
-                  filled: true,
-                  contentPadding: EdgeInsets.symmetric(horizontal: 20),
-                  hintText: 'Search',
-                  hintStyle: TextStyle(
-                    fontSize: 13,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                  ),
-                  prefixIcon: Icon(Icons.search, color: Colors.white),
-                ),
+              decoration: InputDecoration(
+                fillColor: Color(0XFF333350),
+                filled: true,
+                contentPadding: EdgeInsets.all(20),
+                hintText: 'Search',
+                hintTextDirection: TextDirection.rtl,
+                hintStyle: hintText,
+                prefixIcon: Icon(Icons.search, color: Colors.white, size: 40),
               ),
-              SizedBox(height: 20),
-              filteredResults.isNotEmpty
+            ),
+            SizedBox(height: 20),
+            Expanded(
+              child: filteredResults.isNotEmpty
                   ? ListView.builder(
-                      shrinkWrap: true,
                       itemCount: filteredResults.length,
                       itemBuilder: (context, index) {
                         return ListTile(
                           title: Text(filteredResults[index]['header'],
-                              style: TextStyle(
-                                  fontSize: 16, fontWeight: FontWeight.w500)),
+                              style: questionSubHeader),
                           onTap: () =>
                               _navigateToRulesHeader(filteredResults[index]),
                         );
                       },
                     )
-                  : Text("No results found",
-                      style: TextStyle(color: Colors.grey)),
-            ],
-          ),
+                  : Center(
+                      child: Text("No results found",
+                          style: TextStyle(color: Colors.grey)),
+                    ),
+            ),
+          ],
         ),
       ),
     );

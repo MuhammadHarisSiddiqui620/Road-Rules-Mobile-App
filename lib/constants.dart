@@ -44,8 +44,8 @@ const descriptionText = TextStyle(
     fontFamily: 'PlusJakartaSans',
     fontWeight: FontWeight.w500);
 
-const postCardInputText = TextStyle(
-    color: Color(0xFF000000),
+const hintText = TextStyle(
+    color: Colors.white,
     fontSize: 13,
     fontFamily: 'PlusJakartaSans',
     fontWeight: FontWeight.w500);
