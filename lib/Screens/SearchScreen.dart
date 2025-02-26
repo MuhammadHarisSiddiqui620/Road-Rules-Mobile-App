@@ -23,11 +23,11 @@ class _SearchScreenState extends State<SearchScreen> {
       setState(() {}); // Ensure UI updates after data loads
     });
     searchController.addListener(() {
-      print("Text changed: ${searchController.text}"); // Debugging
       _filterResults();
     });
   }
 
+  /// Loads JSON data from assets
   Future<void> loadJsonData() async {
     String drivingRulesJson =
         await rootBundle.loadString('assets/driving_rules.json');
@@ -57,13 +57,16 @@ class _SearchScreenState extends State<SearchScreen> {
       allHeaders = tempHeaders;
       filteredResults = List.from(allHeaders);
     });
-
-    print("Loaded headers: ${allHeaders.length}"); // Debugging
   }
 
+  /// Cleans text by removing leading numbers, dots, and spaces
+  String _cleanText(String text) {
+    return text.replaceAll(RegExp(r'^\d+(\.\d+)*\s*'), '').trim();
+  }
+
+  /// Filters search results based on query (matches first letter of titles)
   void _filterResults() {
     String query = searchController.text.toLowerCase();
-    print("Search query: $query"); // Debugging
 
     if (query.isEmpty) {
       setState(() {
@@ -75,24 +78,31 @@ class _SearchScreenState extends State<SearchScreen> {
     setState(() {
       filteredResults = allHeaders
           .where((item) =>
-              item['header'].toLowerCase().contains(query) ||
-              item['subheaders']
-                  .any((sub) => sub['title'].toLowerCase().contains(query)))
+              _cleanText(item['header']).toLowerCase().startsWith(query) ||
+              item['subheaders'].any((sub) => _cleanText(sub['title'])
+                  .toLowerCase()
+                  .startsWith(query))) // Matches first letter
+          .map((item) => {
+                'header': item['header'],
+                'subheaders': item['subheaders']
+                    .where((sub) => _cleanText(sub['title'])
+                        .toLowerCase()
+                        .startsWith(query))
+                    .toList()
+              })
           .toList();
     });
-
-    print("Filtered results: ${filteredResults.length}"); // Debugging
   }
 
-  void _navigateToRulesHeader(Map<String, dynamic> selectedItem) {
+  /// Navigates to details screen when a title is tapped
+  void _navigateToRulesHeader(String title) {
     Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) => DetailRuleScreen(
-          header: selectedItem['header'],
-          subHeaders:
-              List<Map<String, dynamic>>.from(selectedItem['subheaders']),
-          description: selectedItem['description'],
+          header: title,
+          subHeaders: [],
+          description: '',
         ),
       ),
     );
@@ -144,11 +154,23 @@ class _SearchScreenState extends State<SearchScreen> {
                   ? ListView.builder(
                       itemCount: filteredResults.length,
                       itemBuilder: (context, index) {
-                        return ListTile(
-                          title: Text(filteredResults[index]['header'],
-                              style: questionSubHeader),
-                          onTap: () =>
-                              _navigateToRulesHeader(filteredResults[index]),
+                        return Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            ...filteredResults[index]['subheaders']
+                                .map<Widget>((sub) {
+                              String cleanTitle = _cleanText(sub['title']);
+                              return Padding(
+                                padding: const EdgeInsets.only(left: 16.0),
+                                child: ListTile(
+                                  title: Text(cleanTitle,
+                                      style: questionSubHeader),
+                                  onTap: () =>
+                                      _navigateToRulesHeader(cleanTitle),
+                                ),
+                              );
+                            }).toList(),
+                          ],
                         );
                       },
                     )

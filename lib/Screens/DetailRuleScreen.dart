@@ -59,8 +59,6 @@ class _DetailRuleScreenState extends State<DetailRuleScreen> {
         ? List<Map<String, dynamic>>.from(jsonDecode(favData))
         : [];
 
-    bool exists = favList.any((item) => item['header'] == widget.header);
-
     if (isFavourite) {
       // Remove favorite
       favList.removeWhere((item) => item['header'] == widget.header);

@@ -11,197 +11,197 @@
       {
         "id": 1.2,
         "title": "2. Single-track railroad",
-        "picture": ""
+        "picture": "assets/road_signs/single_track_railroad.png"
       },
       {
         "id": 1.3,
         "title": "3. Multi-track railroad",
-        "picture": ""
+        "picture": "assets/road_signs/multi_track_railroad.png"
       },
       {
         "id": 1.4,
         "title": "4. Approaching a railroad crossing",
-        "picture": ""
+        "picture": "assets/road_signs/Approaching_a_railroad_crossing.png"
       },
       {
         "id": 1.5,
         "title": "5. Intersection with streetcar line",
-        "picture": ""
+        "picture": "assets/road_signs/Intersection_with_streetcar_line.png"
       },
       {
         "id": 1.6,
         "title": "6. Intersection of equivalent roads",
-        "picture": ""
+        "picture": "assets/road_signs/Intersection_of_equivalent_roads.png"
       },
       {
         "id": 1.7,
         "title": "7. Traffic circle intersection",
-        "picture": ""
+        "picture": "assets/road_signs/Traffic_circle_intersection.png"
       },
       {
         "id": 1.8,
         "title": "8. Drawbridge",
-        "picture": ""
+        "picture": "assets/road_signs/Drawbridge.png"
       },
       {
         "id": 1.9,
         "title": "9. Embankment exit",
-        "picture": ""
+        "picture": "assets/road_signs/Embankment_exit.png"
       },
       {
         "id": 1.10,
         "title": "10. Dangerous turn (left)",
-        "picture": ""
+        "picture": "assets/road_signs/Dangerous_turn_(left).png"
       },
       {
         "id": 1.11,
         "title": "11. Dangerous turns (with first right turn)",
-        "picture": ""
+        "picture": "assets/road_signs/Dangerous_turns_(with_first_right_turn).png"
       },
       {
         "id": 1.12,
         "title": "12. Dangerous turns (with first left turn)",
-        "picture": ""
+        "picture": "assets/road_signs/Dangerous_turns_(with_first_left_turn).png"
       },
       {
         "id": 1.13,
         "title": "13. Steep descent",
-        "picture": ""
+        "picture": "assets/road_signs/Steep_descent.png"
       },
       {
         "id": 1.14,
         "title": "14. Steep climb",
-        "picture": ""
+        "picture": "assets/road_signs/Steep_climb.png"
       },
       {
         "id": 1.15,
         "title": "15. Slippery road",
-        "picture": ""
+        "picture": "assets/road_signs/Slippery_road.png"
       },
       {
         "id": 1.16,
         "title": "16. Rough road",
-        "picture": ""
+        "picture": "assets/road_signs/Rough_road.png"
       },
       {
         "id": 1.17,
         "title": "17. Artificial unevenness",
-        "picture": ""
+        "picture": "assets/road_signs/Artificial_unevenness.png"
       },
       {
         "id": 1.18,
         "title": "18. Gravel discharge",
-        "picture": ""
+        "picture": "assets/road_signs/Gravel_discharge.png"
       },
       {
         "id": 1.19,
         "title": "19. Dangerous curb",
-        "picture": ""
+        "picture": "assets/road_signs/Dangerous_curb.png"
       },
       {
         "id": 1.20,
         "title": "20. Road narrowing",
-        "picture": ""
+        "picture": "assets/road_signs/Road_narrowing.png"
       },
       {
         "id": 1.21,
         "title": "21. Road narrowing",
-        "picture": ""
+        "picture": "assets/road_signs/Road_narrowing_2.png"
       },
       {
         "id": 1.22,
         "title": "22. Road narrowing",
-        "picture": ""
+        "picture": "assets/road_signs/Road_narrowing_3.png"
       },
       {
         "id": 1.23,
         "title": "23. Two-way traffic",
-        "picture": ""
+        "picture": "assets/road_signs/Two-way_traffic.png"
       },
       {
         "id": 1.24,
         "title": "24. Crosswalk",
-        "picture": ""
+        "picture": "assets/road_signs/Crosswalk.png"
       },
       {
         "id": 1.25,
         "title": "25. Children",
-        "picture": ""
+        "picture": "assets/road_signs/Children.png"
       },
       {
         "id": 1.26,
         "title": "26. Intersection with a cycle path or cycle-pedestrian path",
-        "picture": ""
+        "picture": "assets/road_signs/Intersection_with_a_cycle_path_or_cycle-pedestrian_path.png"
       },
       {
         "id": 1.27,
         "title": "27. Road works",
-        "picture": ""
+        "picture": "assets/road_signs/Road_works.png"
       },
       {
         "id": 1.28,
         "title": "28. Cattle drive",
-        "picture": ""
+        "picture": "assets/road_signs/Cattle_drive.png"
       },
       {
         "id": 1.29,
         "title": "29. Wild animals",
-        "picture": ""
+        "picture": "assets/road_signs/Wild_animals.png"
       },
       {
         "id": 1.30,
         "title": "30. Falling rocks",
-        "picture": ""
+        "picture": "assets/road_signs/Falling_rocks.png"
       },
       {
         "id": 1.31,
         "title": "31. Side wind",
-        "picture": ""
+        "picture": "assets/road_signs/Side_wind.png"
       },
       {
         "id": 1.32,
         "title": "32. Low-flying airplanes",
-        "picture": ""
+        "picture": "assets/road_signs/Low-flying_airplanes.png"
       },
       {
         "id": 1.33,
         "title": "33. Tunnel",
-        "picture": ""
+        "picture": "assets/road_signs/Tunnel.png"
       },
       {
         "id": 1.34,
         "title": "34. Congestion",
-        "picture": ""
+        "picture": "assets/road_signs/Congestion.png"
       },
       {
         "id": 1.35,
         "title": "35. Other hazards",
-        "picture": ""
+        "picture": "assets/road_signs/Other_hazards.png"
       },
       {
         "id": 1.36,
         "title": "36. Direction of rotation",
-        "picture": ""
+        "picture": "assets/road_signs/Direction_of_rotation.png"
       },
       {
         "id": 1.37,
         "title": "37. Direction of rotation",
-        "picture": ""
+        "picture": "assets/road_signs/Direction_of_rotation_2.png"
       },
       {
         "id": 1.38,
         "title": "38. Direction of rotation",
-        "picture": ""
+        "picture": "assets/road_signs/Direction_of_rotation_3.png"
       },
       {
         "id": 1.39,
         "title": "39. Intersection section",
-        "picture": ""
+        "picture": "assets/road_signs/Intersection_section.png"
       },
       {
         "id": 1.40,
         "title": "40. Traffic light control",
-        "picture": ""
+        "picture": "assets/road_signs/Traffic_light_control.png"
       }
     ]
   },
@@ -212,37 +212,37 @@
       {
         "id": 1.1,
         "title": "1. Main Road",
-        "picture": ""
+        "picture": "assets/road_signs/Main_Road.png"
       },
       {
         "id": 1.2,
         "title": "2. End of the main road",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_the_main_road.png"
       },
       {
         "id": 1.3,
         "title": "3. Intersection with a secondary road",
-        "picture": ""
+        "picture": "assets/road_signs/Intersection_with_a_secondary_road.png"
       },
       {
         "id": 1.4,
         "title": "4. Give way",
-        "picture": ""
+        "picture": "assets/road_signs/Give_way.png"
       },
       {
         "id": 1.5,
         "title": "5. Driving without stopping is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Driving_without_stopping_is_prohibited.png"
       },
       {
         "id": 1.6,
         "title": "6. The advantage of oncoming traffic",
-        "picture": ""
+        "picture": "assets/road_signs/The_advantage_of_oncoming_traffic.png"
       },
       {
         "id": 1.7,
         "title": "7. Advantage over oncoming traffic",
-        "picture": ""
+        "picture": "assets/road_signs/Advantage_over_oncoming_traffic.png"
       }
     ]
   },
@@ -253,197 +253,197 @@
       {
         "id": 1.1,
         "title": "1. No entry",
-        "picture": ""
+        "picture": "assets/road_signs/No_entry.png"
       },
       {
         "id": 1.2,
         "title": "2. Traffic is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Traffic_is_prohibited.png"
       },
       {
         "id": 1.3,
         "title": "3. Movement of motor vehicles is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Movement_of_motor_vehicles_is_prohibited.png"
       },
       {
         "id": 1.4,
         "title": "4. Truck traffic is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Truck_traffic_is_prohibited.png"
       },
       {
         "id": 1.5,
         "title": "5. Motorcycle traffic is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Motorcycle_traffic_is_prohibited.png"
       },
       {
         "id": 1.6,
         "title": "6. Tractor traffic is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Tractor_traffic_is_prohibited.png"
       },
       {
         "id": 1.7,
         "title": "7. Driving with a trailer is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Driving_with_a_trailer_is_prohibited.png"
       },
       {
         "id": 1.8,
         "title": "8. The movement of horse-drawn carts is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/The_movement_of_horse-drawn_carts_is_prohibited.png"
       },
       {
         "id": 1.9,
         "title": "9. It is forbidden to ride bicycles",
-        "picture": ""
+        "picture": "assets/road_signs/It_is_forbidden_to_ride_bicycles.png"
       },
       {
         "id": 1.10,
         "title": "10. Pedestrian traffic is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Pedestrian_traffic_is_prohibited.png"
       },
       {
         "id": 1.11,
         "title": "11. Weight limitation",
-        "picture": ""
+        "picture": "assets/road_signs/Weight_limitation.png"
       },
       {
         "id": 1.12,
         "title": "12. Restriction of the mass per vehicle axle",
-        "picture": ""
+        "picture": "assets/road_signs/Restriction_of_the_mass_per_vehicle_axle.png"
       },
       {
         "id": 1.13,
         "title": "13. Height limitation",
-        "picture": ""
+        "picture": "assets/road_signs/Height_limitation.png"
       },
       {
         "id": 1.14,
         "title": "14. Width limitation",
-        "picture": ""
+        "picture": "assets/road_signs/Width_limitation.png"
       },
       {
         "id": 1.15,
         "title": "15. Width limitation",
-        "picture": ""
+        "picture": "assets/road_signs/Width_limitation.png"
       },
       {
         "id": 1.16,
         "title": "16. Length limitation",
-        "picture": ""
+        "picture": "assets/road_signs/Length_limitation.png"
       },
       {
         "id": 1.17,
         "title": "17. Minimum distance limitation",
-        "picture": ""
+        "picture": "assets/road_signs/Minimum_distance_limitation.png"
       },
       {
         "id": 1.18,
         "title": "18. Customs",
-        "picture": ""
+        "picture": "assets/road_signs/Customs.png"
       },
       {
         "id": 1.19,
         "title": "19. Danger",
-        "picture": ""
+        "picture": "assets/road_signs/Danger.png"
       },
       {
         "id": 1.20,
         "title": "20. Control",
-        "picture": ""
+        "picture": "assets/road_signs/Control.png"
       },
       {
         "id": 1.21,
         "title": "21. Turning right is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Turning_right_is_prohibited.png"
       },
       {
         "id": 1.22,
         "title": "22. Turning left is forbidden",
-        "picture": ""
+        "picture": "assets/road_signs/Turning_left_is_forbidden.png"
       },
       {
         "id": 1.23,
         "title": "23. Turning around is forbidden",
-        "picture": ""
+        "picture": "assets/road_signs/Turning_around_is_forbidden.png"
       },
       {
         "id": 1.24,
         "title": "24. Overtaking is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Overtaking_is_prohibited.png"
       },
       {
         "id": 1.25,
         "title": "25. End of overtaking exclusion zone",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_overtaking_exclusion_zone.png"
       },
       {
         "id": 1.26,
         "title": "26. Overtaking by a truck is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Overtaking_by_a_truck_is_prohibited.png"
       },
       {
         "id": 1.27,
         "title": "27. End of the no overtaking zone for trucks",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_the_no_overtaking_zone_for_trucks.png"
       },
       {
         "id": 1.28,
         "title": "28. Maximum speed limit",
-        "picture": ""
+        "picture": "assets/road_signs/Maximum_speed_limit.png"
       },
       {
         "id": 1.29,
         "title": "29. End of the maximum speed limit zone",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_the_maximum_speed_limit_zone.png"
       },
       {
         "id": 1.30,
         "title": "30. No audible signal is allowed",
-        "picture": ""
+        "picture": "assets/road_signs/No_audible_signal_is_allowed.png"
       },
       {
         "id": 1.31,
         "title": "31. Stopping is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Stopping_is_prohibited.png"
       },
       {
         "id": 1.32,
         "title": "32. Parking is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Parking_is_prohibited.png"
       },
       {
         "id": 1.33,
         "title": "33. Parking is prohibited on odd-numbered days of the month",
-        "picture": ""
+        "picture": "assets/road_signs/Parking_is_prohibited_on_odd-numbered_days_of_the_month.png"
       },
       {
         "id": 1.34,
         "title": "34. Parking is prohibited on even-numbered days of the month",
-        "picture": ""
+        "picture": "assets/road_signs/Parking_is_prohibited_on_even-numbered_days_of_the_month.png"
       },
       {
         "id": 1.35,
         "title": "35. End of all restrictions zone",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_all_restrictions_zone.png"
       },
       {
         "id": 1.36,
         "title": "36. Movement of vehicles with dangerous goods is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Movement_of_vehicles_with_dangerous_goods_is_prohibited.png"
       },
       {
         "id": 1.37,
         "title": "37. Movement of vehicles with explosive and flammable cargoes is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Movement_of_vehicles_with_explosive_and_flammable_cargoes_is_prohibited.png"
       },
       {
         "id": 1.38,
         "title": "38. Bus traffic is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Bus_traffic_is_prohibited.png"
       },
       {
         "id": 1.39,
         "title": "39. Driving on personal mobility aids is prohibited",
-        "picture": ""
+        "picture": "assets/road_signs/Driving_on_personal_mobility_aids_is_prohibited.png"
       }
     ]
   },
@@ -454,107 +454,107 @@
       {
         "id": 1.1,
         "title": "1. Straight ahead",
-        "picture": "assets/random.svg"
+        "picture": "assets/road_signs/Straight_ahead.png"
       },
       {
         "id": 1.2,
         "title": "2. Movement to the left",
-        "picture": ""
+        "picture": "assets/road_signs/Movement_to_the_left.png"
       },
       {
         "id": 1.3,
         "title": "3. Driving straight ahead or to the right",
-        "picture": ""
+        "picture": "assets/road_signs/Driving_straight_ahead_or_to_the_right.png"
       },
       {
         "id": 1.4,
         "title": "4. Going straight or left",
-        "picture": ""
+        "picture": "assets/road_signs/Going_straight_or_left.png"
       },
       {
         "id": 1.5,
         "title": "5. Movement to the right or left",
-        "picture": ""
+        "picture": "assets/road_signs/Movement_to_the_right_or_left.png"
       },
       {
         "id": 1.6,
         "title": "6. Avoiding an obstacle on the right",
-        "picture": ""
+        "picture": "assets/road_signs/Avoiding_an_obstacle_on_the_right.png"
       },
       {
         "id": 1.7,
         "title": "7. Avoiding an obstacle on the left",
-        "picture": ""
+        "picture": "assets/road_signs/Avoiding_an_obstacle_on_the_left.png"
       },
       {
         "id": 1.8,
         "title": "8. Avoiding an obstacle on the right or left",
-        "picture": ""
+        "picture": "assets/road_signs/Avoiding_an_obstacle_on_the_right_or_left.png"
       },
       {
         "id": 1.9,
         "title": "9. Circular motion",
-        "picture": ""
+        "picture": "assets/road_signs/Circular_motion.png"
       },
       {
         "id": 1.10,
         "title": "10. Bike lane",
-        "picture": ""
+        "picture": "assets/road_signs/Bike_lane.png"
       },
       {
         "id": 1.11,
         "title": "11. The end of the bike lane",
-        "picture": ""
+        "picture": "assets/road_signs/The_end_of_the_bike_lane.png"
       },
       {
         "id": 1.12,
         "title": "12. Pedestrian walkway",
-        "picture": ""
+        "picture": "assets/road_signs/Pedestrian_walkway.png"
       },
       {
         "id": 1.13,
         "title": "13. Pedestrian and bicycle path with combined movement",
-        "picture": ""
+        "picture": "assets/road_signs/Pedestrian_and_bicycle_path_with_combined_movement.png"
       },
       {
         "id": 1.14,
         "title": "14. End of pedestrian and bicycle path with combined traffic",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_pedestrian_and_bicycle_path_with_combined_traffic.png"
       },
       {
         "id": 1.15,
         "title": "15. Pedestrian and bicycle path with traffic separation",
-        "picture": ""
+        "picture": "assets/road_signs/Pedestrian_and_bicycle_path_with_traffic_separation.png"
       },
       {
         "id": 1.16,
         "title": "16. Pedestrian and bicycle path with traffic separation",
-        "picture": ""
+        "picture": "assets/road_signs/Pedestrian_and_bicycle_path_with_traffic_separation_2.png"
       },
       {
         "id": 1.17,
         "title": "17. End of pedestrian and bicycle path with traffic separation",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_pedestrian_and_bicycle_path_with_traffic_separation.png"
       },
       {
         "id": 1.18,
         "title": "18. End of pedestrian and bicycle path with traffic separation",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_pedestrian_and_bicycle_path_with_traffic_separation_2.png"
       },
       {
         "id": 1.19,
         "title": "19. Minimum speed limit",
-        "picture": ""
+        "picture": "assets/road_signs/Minimum_speed_limit.png"
       },
       {
         "id": 1.20,
         "title": "20. End of the minimum speed limit zone",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_the_minimum_speed_limit_zone.png"
       },
       {
         "id": 1.21,
         "title": "21. Direction of movement of vehicles with dangerous goods",
-        "picture": ""
+        "picture": "assets/road_signs/Direction_of_movement_of_vehicles_with_dangerous_goods.png"
       }
     ]
   },
@@ -565,167 +565,167 @@
       {
         "id": 1.1,
         "title": "1. Freeway",
-        "picture": ""
+        "picture": "assets/road_signs/Freeway.png"
       },
       {
         "id": 1.2,
         "title": "2. End of the highway",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_the_highway.png"
       },
       {
         "id": 1.3,
         "title": "3. Road for cars",
-        "picture": ""
+        "picture": "assets/road_signs/Road_for_cars.png"
       },
       {
         "id": 1.4,
         "title": "4. The end of the road for automobiles",
-        "picture": ""
+        "picture": "assets/road_signs/The_end_of_the_road_for_automobiles.png"
       },
       {
         "id": 1.5,
         "title": "5. One-way road",
-        "picture": ""
+        "picture": "assets/road_signs/One-way_road.png"
       },
       {
         "id": 1.6,
         "title": "6. The end of a one-way road",
-        "picture": ""
+        "picture": "assets/road_signs/The_end_of_a_one-way_road.png"
       },
       {
         "id": 1.7,
         "title": "7. Exiting onto a one-way road",
-        "picture": ""
+        "picture": "assets/road_signs/Exiting_onto_a_one-way_road.png"
       },
       {
         "id": 1.8,
         "title": "8. Reverse motion",
-        "picture": ""
+        "picture": "assets/road_signs/Reverse_motion.png"
       },
       {
         "id": 1.9,
         "title": "9. End of reversing movement",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_reversing_movement.png"
       },
       {
         "id": 1.10,
         "title": "10. Driving on a road with reversible traffic",
-        "picture": ""
+        "picture": "assets/road_signs/Driving_on_a_road_with_reversible_traffic.png"
       },
       {
         "id": 1.11,
         "title": "11. Road with a lane for route vehicles",
-        "picture": ""
+        "picture": "assets/road_signs/Road_with_a_lane_for_route_vehicles.png"
       },
       {
         "id": 1.12,
         "title": "12. Road with a bike lane",
-        "picture": ""
+        "picture": "assets/road_signs/Road_with_a_bike_lane.png"
       },
       {
         "id": 1.13,
         "title": "13. The end of the road with a bike lane",
-        "picture": ""
+        "picture": "assets/road_signs/The_end_of_the_road_with_a_bike_lane.png"
       },
       {
         "id": 1.14,
         "title": "14. Entering a road with a lane for route vehicles",
-        "picture": ""
+        "picture": "assets/road_signs/Entering_a_road_with_a_lane_for_route_vehicles.png"
       },
       {
         "id": 1.15,
         "title": "15. Driving on a road with a bike lane",
-        "picture": ""
+        "picture": "assets/road_signs/Driving_on_a_road_with_a_bike_lane.png"
       },
       {
         "id": 1.16,
         "title": "16. Lane for route vehicles",
-        "picture": ""
+        "picture": "assets/road_signs/Lane_for_route_vehicles.png"
       },
       {
         "id": 1.17,
         "title": "17. Bicycle lane",
-        "picture": ""
+        "picture": "assets/road_signs/Bicycle_lane.png"
       },
       {
         "id": 1.18,
         "title": "18. End of the lane for route vehicles",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_the_lane_for_route_vehicles.png"
       },
       {
         "id": 1.19,
         "title": "19. The end of the bike lane",
-        "picture": ""
+        "picture": "assets/road_signs/The_end_of_the_bike_lane.png"
       },
       {
         "id": 1.20,
         "title": "20. Traffic directions by lanes",
-        "picture": ""
+        "picture": "assets/road_signs/Traffic_directions_by_lanes.png"
       },
       {
         "id": 1.21,
         "title": "21. Traffic directions by lanes",
-        "picture": ""
+        "picture": "assets/road_signs/Traffic_directions_by_lanes_2.png"
       },
       {
         "id": 1.22,
         "title": "22. The beginning of the lane",
-        "picture": ""
+        "picture": "assets/road_signs/The_beginning_of_the_lane.png"
       },
       {
         "id": 1.23,
         "title": "23. The beginning of the lane",
-        "picture": ""
+        "picture": "assets/road_signs/The_beginning_of_the_lane_2.png"
       },
       {
         "id": 1.24,
         "title": "24. End of lane",
-        "picture": ""
+        "picture": "assets/road_signs/End of lane.png"
       },
       {
         "id": 1.25,
         "title": "25. End of lane",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_lane_2.png"
       },
       {
         "id": 1.26,
         "title": "26. Direction of traffic by lanes",
-        "picture": ""
+        "picture": "assets/road_signs/Direction_of_traffic_by_lanes.png"
       },
       {
         "id": 1.27,
         "title": "27. Number of lanes",
-        "picture": ""
+        "picture": "assets/road_signs/Number_of_lanes.png"
       },
       {
         "id": 1.28,
         "title": "28. Bus stop location",
-        "picture": ""
+        "picture": "assets/road_signs/Bus_stop_location.png"
       },
       {
         "id": 1.29,
         "title": "29. Streetcar stop",
-        "picture": ""
+        "picture": "assets/road_signs/Streetcar_stop.png"
       },
       {
         "id": 1.30,
         "title": "30. Crosswalk",
-        "picture": ""
+        "picture": "assets/road_signs/Crosswalk.png"
       },
       {
         "id": 1.31,
         "title": "31. Artificial unevenness",
-        "picture": ""
+        "picture": "assets/road_signs/Artificial_unevenness.png"
       },
       {
         "id": 1.32,
         "title": "32. Residential area",
-        "picture": ""
+        "picture": "assets/road_signs/Residential_area.png"
       },
       {
         "id": 1.33,
         "title": "33. End of residential area",
-        "picture": ""
+        "picture": "assets/road_signs/End_of_residential_area.png"
       }
     ]
   },
@@ -736,42 +736,42 @@
       {
         "id": 1.1,
         "title": "1. Recommended speed",
-        "picture": ""
+        "picture": "assets/road_signs/Recommended_speed.png"
       },
       {
         "id": 1.2,
         "title": "2. Turning point",
-        "picture": ""
+        "picture": "assets/road_signs/Turning_point.png"
       },
       {
         "id": 1.3,
         "title": "3. Turning area",
-        "picture": ""
+        "picture": "assets/road_signs/Turning_area.png"
       },
       {
         "id": 1.4,
         "title": "4. Parking lot",
-        "picture": ""
+        "picture": "assets/road_signs/Parking_lot.png"
       },
       {
         "id": 1.5,
         "title": "5. Emergency stop lane",
-        "picture": ""
+        "picture": "assets/road_signs/Emergency_stop_lane.png"
       },
       {
         "id": 1.6,
         "title": "6. Underground crosswalk",
-        "picture": ""
+        "picture": "assets/road_signs/Underground_crosswalk.png"
       },
       {
         "id": 1.7,
         "title": "7. Elevated crosswalk",
-        "picture": ""
+        "picture": "assets/road_signs/Elevated_crosswalk.png"
       },
       {
         "id": 1.8,
         "title": "8. Dead end",
-        "picture": ""
+        "picture": "assets/road_signs/Dead_end.png"
       }
     ]
   }
