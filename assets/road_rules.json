@@ -26,7 +26,7 @@
       {
         "id": 1.5,
         "title": "5. Intersection with streetcar line",
-        "picture": "assets/road_signs/Intersection_with_streetcar_line.png"
+        "picture": "assets/road_signs/intersection_with_streetcar_line.png"
       },
       {
         "id": 1.6,
@@ -36,172 +36,177 @@
       {
         "id": 1.7,
         "title": "7. Traffic circle intersection",
-        "picture": "assets/road_signs/Traffic_circle_intersection.png"
+        "picture": "assets/road_signs/traffic_circle_intersection.png"
       },
       {
         "id": 1.8,
-        "title": "8. Drawbridge",
-        "picture": "assets/road_signs/Drawbridge.png"
+        "title": "8. Traffic light control",
+        "picture": "assets/road_signs/traffic_light_control.png"
       },
       {
         "id": 1.9,
-        "title": "9. Embankment exit",
-        "picture": "assets/road_signs/Embankment_exit.png"
+        "title": "9. Drawbridge",
+        "picture": "assets/road_signs/Drawbridge.png"
       },
       {
         "id": 1.10,
-        "title": "10. Dangerous turn (left)",
-        "picture": "assets/road_signs/Dangerous_turn_(left).png"
+        "title": "10. Embankment exit",
+        "picture": "assets/road_signs/Embankment_exit.png"
       },
       {
         "id": 1.11,
-        "title": "11. Dangerous turns (with first right turn)",
-        "picture": "assets/road_signs/Dangerous_turns_(with_first_right_turn).png"
+        "title": "11. Dangerous turn (right)",
+        "picture": "assets/road_signs/Dangerous_turn_(right).png"
       },
       {
         "id": 1.12,
-        "title": "12. Dangerous turns (with first left turn)",
-        "picture": "assets/road_signs/Dangerous_turns_(with_first_left_turn).png"
+        "title": "12. Dangerous turn (left)",
+        "picture": "assets/road_signs/Dangerous_turn_(left).png"
       },
       {
         "id": 1.13,
-        "title": "13. Steep descent",
-        "picture": "assets/road_signs/Steep_descent.png"
+        "title": "13. Dangerous turns (with first right turn)",
+        "picture": "assets/road_signs/Dangerous_turns_(with_first_right_turn).png"
       },
       {
         "id": 1.14,
-        "title": "14. Steep climb",
-        "picture": "assets/road_signs/Steep_climb.png"
+        "title": "14. Dangerous turns (with first left turn)",
+        "picture": "assets/road_signs/Dangerous_turns_(with_first_left_turn).png"
       },
       {
         "id": 1.15,
-        "title": "15. Slippery road",
-        "picture": "assets/road_signs/Slippery_road.png"
+        "title": "15. Steep descent",
+        "picture": "assets/road_signs/Steep_descent.png"
       },
       {
         "id": 1.16,
-        "title": "16. Rough road",
-        "picture": "assets/road_signs/Rough_road.png"
+        "title": "16. Steep climb",
+        "picture": "assets/road_signs/Steep_climb.png"
       },
       {
         "id": 1.17,
-        "title": "17. Artificial unevenness",
-        "picture": "assets/road_signs/Artificial_unevenness.png"
+        "title": "17. Slippery road",
+        "picture": "assets/road_signs/Slippery_road.png"
       },
       {
         "id": 1.18,
-        "title": "18. Gravel discharge",
-        "picture": "assets/road_signs/Gravel_discharge.png"
+        "title": "18. Rough road",
+        "picture": "assets/road_signs/Rough_road.png"
       },
       {
         "id": 1.19,
-        "title": "19. Dangerous curb",
-        "picture": "assets/road_signs/Dangerous_curb.png"
+        "title": "19. Artificial unevenness",
+        "picture": "assets/road_signs/Artificial_unevenness.png"
       },
       {
         "id": 1.20,
-        "title": "20. Road narrowing",
-        "picture": "assets/road_signs/Road_narrowing.png"
+        "title": "20. Gravel discharge",
+        "picture": "assets/road_signs/Gravel_discharge.png"
       },
       {
         "id": 1.21,
-        "title": "21. Road narrowing",
-        "picture": "assets/road_signs/Road_narrowing_2.png"
+        "title": "21. Dangerous curb",
+        "picture": "assets/road_signs/Dangerous_curb.png"
       },
       {
         "id": 1.22,
-        "title": "22. Road narrowing",
-        "picture": "assets/road_signs/Road_narrowing_3.png"
+        "title": "22. Road narrowing (Both Sides)",
+        "picture": "assets/road_signs/Road_narrowing.png"
       },
       {
         "id": 1.23,
-        "title": "23. Two-way traffic",
-        "picture": "assets/road_signs/Two-way_traffic.png"
+        "title": "23. Road narrowing (Right)",
+        "picture": "assets/road_signs/Road_narrowing_2.png"
       },
       {
         "id": 1.24,
-        "title": "24. Crosswalk",
-        "picture": "assets/road_signs/Crosswalk.png"
+        "title": "24. Road narrowing (Left)",
+        "picture": "assets/road_signs/Road_narrowing_3.png"
       },
       {
         "id": 1.25,
-        "title": "25. Children",
-        "picture": "assets/road_signs/Children.png"
+        "title": "25. Two-way traffic",
+        "picture": "assets/road_signs/Two-way_traffic.png"
       },
       {
         "id": 1.26,
-        "title": "26. Intersection with a cycle path or cycle-pedestrian path",
-        "picture": "assets/road_signs/Intersection_with_a_cycle_path_or_cycle-pedestrian_path.png"
+        "title": "26. Crosswalk",
+        "picture": "assets/road_signs/Crosswalk.png"
       },
       {
         "id": 1.27,
-        "title": "27. Road works",
-        "picture": "assets/road_signs/Road_works.png"
+        "title": "27. Children",
+        "picture": "assets/road_signs/Children.png"
       },
       {
         "id": 1.28,
-        "title": "28. Cattle drive",
-        "picture": "assets/road_signs/Cattle_drive.png"
+        "title": "28. Intersection with a cycle path or cycle-pedestrian path",
+        "picture": "assets/road_signs/Intersection_with_a_cycle_path_or_cycle-pedestrian_path.png"
       },
       {
         "id": 1.29,
-        "title": "29. Wild animals",
-        "picture": "assets/road_signs/Wild_animals.png"
+        "title": "29. Road works",
+        "picture": "assets/road_signs/Road_works.png"
       },
       {
         "id": 1.30,
-        "title": "30. Falling rocks",
-        "picture": "assets/road_signs/Falling_rocks.png"
+        "title": "30. Cattle drive",
+        "picture": "assets/road_signs/Cattle_drive.png"
       },
       {
         "id": 1.31,
-        "title": "31. Side wind",
-        "picture": "assets/road_signs/Side_wind.png"
+        "title": "31. Wild animals",
+        "picture": "assets/road_signs/Wild_animals.png"
       },
       {
         "id": 1.32,
-        "title": "32. Low-flying airplanes",
-        "picture": "assets/road_signs/Low-flying_airplanes.png"
+        "title": "32. Falling rocks",
+        "picture": "assets/road_signs/Falling_rocks.png"
       },
       {
         "id": 1.33,
-        "title": "33. Tunnel",
-        "picture": "assets/road_signs/Tunnel.png"
+        "title": "33. Side wind",
+        "picture": "assets/road_signs/Side_wind.png"
       },
       {
         "id": 1.34,
-        "title": "34. Congestion",
-        "picture": "assets/road_signs/Congestion.png"
+        "title": "34. Low-flying airplanes",
+        "picture": "assets/road_signs/Low-flying_airplanes.png"
       },
       {
         "id": 1.35,
-        "title": "35. Other hazards",
-        "picture": "assets/road_signs/Other_hazards.png"
+        "title": "35. Tunnel",
+        "picture": "assets/road_signs/Tunnel.png"
       },
       {
         "id": 1.36,
-        "title": "36. Direction of rotation",
-        "picture": "assets/road_signs/Direction_of_rotation.png"
+        "title": "36. Congestion",
+        "picture": "assets/road_signs/Congestion.png"
       },
       {
         "id": 1.37,
-        "title": "37. Direction of rotation",
-        "picture": "assets/road_signs/Direction_of_rotation_2.png"
+        "title": "37. Other hazards",
+        "picture": "assets/road_signs/Other_hazards.png"
       },
       {
         "id": 1.38,
         "title": "38. Direction of rotation",
-        "picture": "assets/road_signs/Direction_of_rotation_3.png"
+        "picture": "assets/road_signs/Direction_of_rotation.png"
       },
       {
         "id": 1.39,
-        "title": "39. Intersection section",
-        "picture": "assets/road_signs/Intersection_section.png"
+        "title": "39. Direction of rotation",
+        "picture": "assets/road_signs/Direction_of_rotation_2.png"
       },
       {
         "id": 1.40,
-        "title": "40. Traffic light control",
-        "picture": "assets/road_signs/Traffic_light_control.png"
+        "title": "40. Direction of rotation",
+        "picture": "assets/road_signs/Direction_of_rotation_3.png"
+      },
+      {
+        "id": 1.41,
+        "title": "41. Intersection section",
+        "picture": "assets/road_signs/Intersection_section.png"
       }
     ]
   },
@@ -680,7 +685,7 @@
       {
         "id": 1.24,
         "title": "24. End of lane",
-        "picture": "assets/road_signs/End of lane.png"
+        "picture": "assets/road_signs/End_of_lane.png"
       },
       {
         "id": 1.25,
@@ -715,7 +720,7 @@
       {
         "id": 1.31,
         "title": "31. Artificial unevenness",
-        "picture": "assets/road_signs/Artificial_unevenness.png"
+        "picture": "assets/road_signs/Artificial_unevenness_2.png"
       },
       {
         "id": 1.32,
