@@ -1,41 +1,44 @@
-# Road Rules App 🎉
+# Driving Rules App 🚗
 
-A user-friendly Birthday Calendar app for Android and iOS that helps users keep track of important birthdays. The app provides an intuitive interface for adding birthdays, viewing upcoming celebrations, creating gift lists, and even sending personalized greeting cards. 
+A user-friendly Driving Rules app for Android and iOS that helps users learn about driving regulations and road signs. The app provides an intuitive interface for accessing driving rules, viewing road signs, saving favorites, and searching for relevant information. 
 
 
 ## Features ✨
 
-- **User Profile**: Enter and personalize your username.
-- **Birthday Management**: Add, edit, and delete birthdays with detailed profiles.
-- **Calendar View**: Displays all added birthdays and upcoming celebrations.
-- **Gift Planning**: Create a list of gifts along with their costs.
-- **Greeting Cards**: Select, customize, and send digital greeting cards.
-- **Search Functionality**: Quickly find profiles by name.
+- **Welcome Screen**: Displays the application logo and automatically switches to the home screen.
+- **Dashboard**: The main screen with navigation options for Driving Rules and Road Signs.
+- **Driving Rules**: A categorized list of articles with an option to add to favorites.
+- **Road Signs**: View various road signs with images and descriptions.
+- **Favorites**: Save articles and signs for quick access.
+- **Search Functionality**: Easily find articles and road signs by keywords.
 
 ## Screens 🚀
 
 The app consists of several key screens:
 
-### 1. **Loading Screen**
-   - The first screen that appears when the app starts.
+### 1. **Welcome Screen (Splash Screen)**
+   - Displays the app logo at startup.
+   - Automatically switches to the home screen after 2-3 seconds.
 
 ![image](https://github.com/user-attachments/assets/69612bc1-fd27-40b8-8a10-ef2871893069)
 
 
-### 2. **Username Entry Screen**
-   - Users enter their name, which will be used in the app.
+### 2. **Home Screen (Dashboard)**
+   - The main screen for navigation.
+   - Buttons to access:
+     
 
 ![image](https://github.com/user-attachments/assets/c9952d08-e1c0-431f-9090-4a6ead6e6cc5)
 
 
-### 3. **Main Screen**
+### 3. **Driving Rules Screen**
    - Displays a greeting with the user's name.
    - Shows a calendar with upcoming birthdays.
 
 ![image](https://github.com/user-attachments/assets/9410445b-e7ad-436e-8803-e713c4b03e43)
 
 
-### 4. **Questionnaire Screen**
+### 4. **Driving Rules Article Screen**
    - Allows users to add a birthday with details.
    - **Features**:
      - Add a photo
@@ -46,19 +49,19 @@ The app consists of several key screens:
 ![image](https://github.com/user-attachments/assets/583250c2-e51b-4cc4-8468-5ec0c307988d)
 
 
-### 5. **Calendar Screen**
+### 5. **Road Signs Screen**
    - Displays all saved birthdays on a calendar.
 
 ![image](https://github.com/user-attachments/assets/3bcddccf-d0ce-4087-b4c7-4120ad910dfc)
 
 
-### 6. **Postcard Screen**
+### 6. **Road Sign Detail Screen**
    - Choose a greeting card, add a message, and save/send it.
 
 ![image](https://github.com/user-attachments/assets/c72b37aa-5564-43f2-aedc-a2b6b6675da1)
 
 
-### 3. **Profile Search Screen**
+### 3. **Favorites Screen**
    - Search for a birthday profile by name.
 
 ![image](https://github.com/user-attachments/assets/75db9bdc-bec1-436d-9803-312dc8a03318)
