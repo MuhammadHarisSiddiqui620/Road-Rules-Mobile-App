@@ -20,7 +20,7 @@ The app consists of several key screens:
    - Displays the app logo at startup.
    - Automatically switches to the home screen after 2-3 seconds.
 
-![image](https://github.com/user-attachments/assets/69612bc1-fd27-40b8-8a10-ef2871893069)
+![image](https://github.com/user-attachments/assets/013ff161-78aa-4542-9ffb-a201b58bac5d)
 
 
 ### 2. **Home Screen (Dashboard)**
@@ -32,13 +32,15 @@ The app consists of several key screens:
 
 ![image](https://github.com/user-attachments/assets/c9952d08-e1c0-431f-9090-4a6ead6e6cc5)
 
+![image](https://github.com/user-attachments/assets/6b029d19-636f-4b07-9823-a5f522c016cf)
+
 
 ### 3. **Driving Rules Screen**
    - List of driving rule articles with titles.
    - Add articles to favorites.
    - Search by article titles.
 
-![image](https://github.com/user-attachments/assets/9410445b-e7ad-436e-8803-e713c4b03e43)
+![image](https://github.com/user-attachments/assets/008f8d13-e13a-473f-b716-8dc0e2dc7c43)
 
 
 ### 4. **Driving Rules Article Screen**
@@ -46,7 +48,7 @@ The app consists of several key screens:
    - Share button to send the article to others.
    - "Back to list" button for easy navigation.
 
-![image](https://github.com/user-attachments/assets/583250c2-e51b-4cc4-8468-5ec0c307988d)
+![image](https://github.com/user-attachments/assets/bd5c96eb-1bdf-496e-ac36-50a8d8a60352)
 
 
 ### 5. **Road Signs Screen**
@@ -64,7 +66,7 @@ The app consists of several key screens:
 ![image](https://github.com/user-attachments/assets/c72b37aa-5564-43f2-aedc-a2b6b6675da1)
 
 
-### 3. **Favorites Screen**
+### 7. **Favorites Screen**
    - Displays all saved articles and traffic signs.
    - Option to remove items from favorites.
    - Quick access to saved content.
