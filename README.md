@@ -26,43 +26,48 @@ The app consists of several key screens:
 ### 2. **Home Screen (Dashboard)**
    - The main screen for navigation.
    - Buttons to access:
-     
+     - **Driving Rules**
+     - **Road Signs**
+   - Search function for articles and signs.
 
 ![image](https://github.com/user-attachments/assets/c9952d08-e1c0-431f-9090-4a6ead6e6cc5)
 
 
 ### 3. **Driving Rules Screen**
-   - Displays a greeting with the user's name.
-   - Shows a calendar with upcoming birthdays.
+   - List of driving rule articles with titles.
+   - Add articles to favorites.
+   - Search by article titles.
 
 ![image](https://github.com/user-attachments/assets/9410445b-e7ad-436e-8803-e713c4b03e43)
 
 
 ### 4. **Driving Rules Article Screen**
-   - Allows users to add a birthday with details.
-   - **Features**:
-     - Add a photo
-     - Select a birth date (with a countdown to the event)
-     - Create a gift list with costs 
-   - Swipe up to return to the home screen.
+   - Displays article title and full text.
+   - Share button to send the article to others.
+   - "Back to list" button for easy navigation.
 
 ![image](https://github.com/user-attachments/assets/583250c2-e51b-4cc4-8468-5ec0c307988d)
 
 
 ### 5. **Road Signs Screen**
-   - Displays all saved birthdays on a calendar.
+   - List of road signs with images and descriptions.
+   - Search by sign names.
+   - Add signs to favorites.
 
 ![image](https://github.com/user-attachments/assets/3bcddccf-d0ce-4087-b4c7-4120ad910dfc)
 
 
 ### 6. **Road Sign Detail Screen**
-   - Choose a greeting card, add a message, and save/send it.
+   - Displays the selected sign with its image and full description.
+   - "Return to list" button for easy navigation.
 
 ![image](https://github.com/user-attachments/assets/c72b37aa-5564-43f2-aedc-a2b6b6675da1)
 
 
 ### 3. **Favorites Screen**
-   - Search for a birthday profile by name.
+   - Displays all saved articles and traffic signs.
+   - Option to remove items from favorites.
+   - Quick access to saved content.
 
 ![image](https://github.com/user-attachments/assets/75db9bdc-bec1-436d-9803-312dc8a03318)
 
